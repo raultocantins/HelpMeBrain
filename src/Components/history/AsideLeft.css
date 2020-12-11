@@ -1,0 +1,30 @@
+.asideLeft{
+    background-color: rgba(228, 184, 184, 0.267);
+    overflow-y: auto;
+   border-radius: 0px 0px 0px 30px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+  
+   justify-content: center;
+   flex-wrap: wrap;
+
+
+    
+}
+.btnHistory{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin-bottom: 30px;
+}
+::-webkit-scrollbar {
+background-color: transparent;
+width: 5px;
+}
+::-webkit-scrollbar-thumb{ 
+    background-color:rgba(228, 184, 184, 0.867);
+    border-radius: 30px;  
+   
+   }
+  
