@@ -4,19 +4,15 @@
    border-radius: 0px 0px 0px 30px;
    padding: 20px;
    display: flex;
-   align-items: center;
-  
+   align-items: center;  
    justify-content: center;
-   flex-wrap: wrap;
-
-
-    
-}
+   flex-wrap: wrap;  
+    }
 .btnHistory{
     height: 150px;
-    width: 150px;
-    background-color: red;
-    margin-bottom: 30px;
+    width: 150px;    
+    margin-bottom: 30px;  
+ 
 }
 ::-webkit-scrollbar {
 background-color: transparent;
@@ -25,6 +21,16 @@ width: 5px;
 ::-webkit-scrollbar-thumb{ 
     background-color:rgba(228, 184, 184, 0.867);
     border-radius: 30px;  
+      }
    
-   }
-  
+.imgPaper{
+    height:100%;
+    width: 100%;      
+    }
+
+.imgPaper:active{
+opacity: 0.5;
+    box-shadow:  -3px -3px 10px rgba(228, 184, 184, 0.867), 
+    3px 3px 3px rgba(228, 184, 184, 0.867);       
+}
+
