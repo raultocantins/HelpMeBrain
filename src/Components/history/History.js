@@ -17,7 +17,7 @@ export default class History extends React.Component {
     this.SearchHistory=this.SearchHistory.bind(this)
   }
   SearchHistory(id){
-    Axios.post('http://localhost:8080/history',{id:id})
+    Axios.post('https://hmbbackend.herokuapp.com/history',{id:id})
     .then(res=>{      
       this.setState({
         history:res.data.data

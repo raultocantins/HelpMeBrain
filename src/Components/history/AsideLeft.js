@@ -5,7 +5,7 @@ import Paper from "@material-ui/core/Paper";
 export default function AsideLeft(props) {
   const [historys, sethistory] = useState([]);  
 useEffect(()=>{
-  Axios.get('http://localhost:8080/historys')
+  Axios.get('https://hmbbackend.herokuapp.com/historys')
   .then(res=>{
 sethistory(res.data)
   })
