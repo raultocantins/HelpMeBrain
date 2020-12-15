@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Content.css";
+import Block from '../block/Block'
 export default function Content(props) {
-  function SearchHistory() {
-    alert();
-  }
 
-  console.log(props.data);
+  
   return (
     <div className="content">
       {props.data.map((e) => {
-        return <h1>{e.title}</h1>;
+        return  <Block data={e}/>
       })}
     </div>
   );

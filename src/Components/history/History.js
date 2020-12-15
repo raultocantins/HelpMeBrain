@@ -1,14 +1,14 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import AsideLeft from "./AsideLeft";
 import AsideRight from "./AsideRight";
 import Content from "./Content";
 import "./History.css";
+import data from '../../data'
 export default class History extends React.Component {
   state = {
     history:[
       {
-        title:'Learning To Drive'
+        
       }
     ]
   };
@@ -16,9 +16,10 @@ export default class History extends React.Component {
     super(props);
     this.SearchHistory=this.SearchHistory.bind(this)
   }
-  SearchHistory(){
+  SearchHistory(id){
+    
     this.setState({
-      history:[{title:'alex'}]
+      history:data
     })
   }
   render() {

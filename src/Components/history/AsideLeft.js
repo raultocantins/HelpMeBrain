@@ -13,8 +13,8 @@ export default function AsideLeft(props) {
     { id: "2" },
   ]);
   
-function SearcHistory(){
-props.search()
+function SearcHistory(id){
+props.search(id)
 }
 
   return (
@@ -22,7 +22,7 @@ props.search()
       {historys.map((e) => {
         return (
 
-          <Paper elevation={2} className="btnHistory" onClick={SearcHistory}>          
+          <Paper elevation={2} className="btnHistory" onClick={()=>SearcHistory(e.id)}>          
               <img src={e.image} alt={e.history} className="imgPaper" />           
           </Paper>
         );

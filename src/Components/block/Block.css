@@ -1,0 +1,30 @@
+.block{
+    margin: 50px;
+   border-radius: 30px;
+    height: auto;
+display: flex;
+background-color: #fff;
+    
+}
+.imageCard{
+    width: 100%;
+    height: 70%;
+    border-radius: 30px 0px 0px 30px;
+    
+}
+.blockText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+margin: 10px;
+}
+
+.blockImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
