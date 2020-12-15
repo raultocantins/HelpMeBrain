@@ -1,9 +1,9 @@
 import React from "react";
+import Axios from 'axios'
 import AsideLeft from "./AsideLeft";
 import AsideRight from "./AsideRight";
 import Content from "./Content";
 import "./History.css";
-import data from '../../data'
 export default class History extends React.Component {
   state = {
     history:[
@@ -17,10 +17,16 @@ export default class History extends React.Component {
     this.SearchHistory=this.SearchHistory.bind(this)
   }
   SearchHistory(id){
-    
-    this.setState({
-      history:data
+    Axios.post('http://localhost:8080/history',{id:id})
+    .then(res=>{      
+      this.setState({
+        history:res.data.data
+      })
     })
+    .catch(err=>{
+      console.log(err)
+    })
+    
   }
   render() {
     return (
