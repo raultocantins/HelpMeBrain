@@ -1,0 +1,32 @@
+.admin {
+  text-align: center;
+  height: auto;
+  min-height: 100vh;
+  background-color: #235390;
+  background-image: url(//d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paperAdmin {
+  width: 1100px;
+  margin: 50px;
+  border-radius: 30px !important;
+  z-index: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.groupInputs {
+  width: 80%;
+  
+}
+.dataHistory {
+  width: 100%;
+  overflow: auto;
+  border-radius: 0px 0px 30px 30px;
+  margin-top: 20px;
+}

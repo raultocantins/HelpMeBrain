@@ -1,6 +1,7 @@
 import React from "react";
 import "./Block.css";
 export default function Block(props) {
+  console.log(props.data.text)
   const data = props.data.text
     ? props.data
     : {
