@@ -57,7 +57,7 @@ export default class Admin extends React.Component {
     }
   }
   sendHistory() {
-    Axios.post("http://hmbbackend.herokuapp.com/add/history", this.state.history)
+    Axios.post("https://hmbbackend.herokuapp.com/add/history", this.state.history)
       .then((res) => {
         console.log(res);
       })
